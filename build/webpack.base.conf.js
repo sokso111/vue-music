@@ -4,7 +4,7 @@ var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
-          //_dirname : 代表当前目录。 
+          //_dirname : 代表当前目录。
   return path.join(__dirname, '..', dir)
 }
 
@@ -19,14 +19,16 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
-  //配置路径 
+  //配置路径
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': resolve('src'),
       //配置别名,调用resolve方法
       'common': resolve('src/common'),
-      'components': resolve('src/components')
+      'components': resolve('src/components'),
+      'api': resolve('src/api'),
+      'base': resolve('src/base')
     }
   },
   module: {

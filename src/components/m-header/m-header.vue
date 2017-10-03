@@ -9,7 +9,7 @@
   export default {}
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
+<style scoped type="text/stylus" lang="stylus" rel="stylesheet/stylus">
   @import "~common/stylus/variable"
   @import "~common/stylus/mixin"
 
@@ -19,7 +19,7 @@
     text-align: center
     color: $color-theme
     font-size: 0
-  .icon
+    .icon
       display: inline-block
       vertical-align: top
       margin-top: 6px
@@ -28,12 +28,12 @@
       margin-right: 9px
       bg-image('logo')
       background-size: 30px 32px
- .text
+    .text
       display: inline-block
       vertical-align: top
       line-height: 44px
       font-size: $font-size-large
-  .mine
+    .mine
       position: absolute
       top: 0
       right: 0
